@@ -1,0 +1,328 @@
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: bold;
+}
+
+p, li {
+  font-size: 0.85vmax;
+}
+
+.small {
+  font-size: 0.7vmax;
+}
+
+h1 {
+  font-size: 1.8vmax;
+  color: whitesmoke;
+}
+
+h2 {
+  font-size: 1.4vmax;
+}
+
+h3 {
+  font-size: 1.3vmax;
+}
+
+h4 {
+  font-size: 1.2vmax;
+}
+
+h5 {
+  font-size: 1.1vmax;
+}
+
+h6 {
+  font-size: 1vmax;
+}
+
+html {
+  font-family: Tahoma, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #99ccff;
+}
+
+header {
+  flex: 0 1 10vh;
+  display: flex;
+  align-items: center;
+  background-color: #5588ff;
+  font-family: Verdana, sans-serif;
+}
+
+header > div {
+  margin: 0 0 0 1vw;
+}
+
+header h1 {
+  text-shadow: 2px 2px 2px #000000;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+body > .container {
+  flex: 1 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > aside {
+  flex: 0 1 24vw;
+
+  display: flex;
+  flex-direction: row;
+  font-family: Segoe UI, sans-serif;
+
+  padding: 0 0.5vw;
+
+  background-color: #5588ff;
+  border-right: 0.1vmax solid #3366ff;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.container > aside > div {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 24vw;
+}
+
+.container > aside > div > h6 {
+
+}
+
+.container > main {
+  border-top: 0.1vmax solid #3366ff;
+
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > main > div#pcount {
+  display: flex;
+  flex: 0 1 12vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > main > div#canvas {
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+#emoji {
+  max-width: 18vmax;
+  max-height: 18vmax;
+  width: 16vmax;
+  height: 16vmax;
+  min-width: 14vmax;
+  min-height: 14vmax;
+  cursor: pointer;
+  /*max-width: 16vmax;
+  max-height: 16vmax;
+  cursor: pointer;*/
+}
+
+footer {
+  flex: 0 1 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaddff;
+  align-self: stretch;
+}
+
+.disappearingText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  font-weight: bold;
+  font-size: 1vmax;
+
+  z-index: 9999;
+}
+
+.shoptreeicon {
+  width: 2vmax;
+  height: 2vmax;
+  max-width: 2vmax;
+  max-height: 2vmax;
+  min-width: 2vmax;
+  min-height: 2vmax;
+
+  padding: 0 0.4vw;
+}
+
+#shop {
+  margin: 1.5vh 0;
+
+  height: 80vh;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+}
+
+#shop li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 1vh 0;
+}
+
+#shop li > img {
+  flex: 0 1 2vw;
+  margin: auto;
+}
+
+#shop li > div {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#shop li > div p {
+  flex-grow: 0;
+  min-width: 12vw;
+  max-width: 12vw;
+}
+
+.invisible {
+  display: none;
+  visibility: hidden;
+}
+
+.shoptree {
+  min-height: 6vh;
+  word-wrap: break-word;
+}
+
+.shoptree:not(.disabledtree) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.shoptree:not(.disabledtree):hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shoptree:not(.disabledtree):active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.disabledtree {
+  cursor: not-allowed !important;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.disabledtree:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.disabledtree:active {
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gametext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.healthbarbase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  background-color: lightgray;
+}
+
+.healthbartop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  background-color: rgb(150, 40, 40);
+}
+
+#loadingscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+
+  background-color: rgb(40, 40, 200);
+
+  z-index: 9999;
+}
+
+#loadingscreen:not(loadingscreenhidden) > h1 {
+  font-size: 2.25vmax;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-family: Segoe UI, sans-serif;
+  visibility: visible;
+}
+
+#loadingscreen.loadingscreenhidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  /*transition: visibility 0s 0.25s, opacity 0.25s linear;*/
+  transition: visibility 0s 0.25s, opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
