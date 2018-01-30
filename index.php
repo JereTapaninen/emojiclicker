@@ -31,7 +31,7 @@
         </div>
       </aside>
 
-      <main>
+      <main id="gamescreen">
         <div id="pcount">
           <h3><span id="points"></span> points</h3>
           <h4><span id="pps"></span> PPS</h4>
